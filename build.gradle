@@ -16,7 +16,6 @@ configurations {
 
 repositories {
 	mavenCentral()
-	jcenter() //최근 많이 사용하는 원격 저장소
 }
 
 dependencies {
@@ -24,7 +23,9 @@ dependencies {
 	implementation 'mysql:mysql-connector-java'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	//
-
+	//Thymeleaf 의존성 추가
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	//
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
